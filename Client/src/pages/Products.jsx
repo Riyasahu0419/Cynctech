@@ -8,7 +8,7 @@ const Products = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products/")
+      .get("https://cynctech.onrender.com/api/products/")
       .then((res) => {
         console.log("Fetched products:", res.data); // ✅ Log API response
 
@@ -42,7 +42,7 @@ const Products = () => {
     }
 
     try {
-        const response = await axios.post('http://localhost:5000/api/cart/add', {
+        const response = await axios.post('https://cynctech.onrender.com/api/cart/add', {
             productId,
             
         }, {
