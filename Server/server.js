@@ -16,8 +16,8 @@ app.use(cors({
     origin: (origin, callback) => {
       console.log('Request from origin:', origin); 
       const allowedOrigins = [
-        "http://localhost:5174", 
-        // "https://sugar-project.vercel.app", 
+        "http://localhost:5173", 
+        "https://cynctech.vercel.app", 
       ];
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
